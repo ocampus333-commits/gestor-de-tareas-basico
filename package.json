@@ -1,8 +1,13 @@
 {
   "name": "gestor-de-tareas",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "dev": "tsx src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "dependencies": {
     "esbuild": "^0.28.2",
     "tsx": "^4.23.15",
@@ -11,9 +16,6 @@
   },
   "devDependencies": {
     "@types/node": "^26.6.6"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "Ocampo",

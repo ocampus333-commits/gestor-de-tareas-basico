@@ -1,12 +1,8 @@
 import * as readline from "node:readline";
+
 import { gestorDeTareas } from "./gestor-de-tareas";
 import { prioridadDeTareas, estadoTarea } from "./tarea";
-
-const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout,
-});
-
+const rl = readline.createInterface({input: process.stdin, output: process.stdout,});
 function preguntar(texto: string): Promise<string> {
     return new Promise((resolve) => {
         rl.question(texto, (respuesta) => resolve(respuesta.trim()));
